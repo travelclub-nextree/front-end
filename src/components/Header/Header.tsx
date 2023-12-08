@@ -23,7 +23,8 @@ const Header = (): ReactElement => {
             );
 
             localStorage.removeItem("token");
-            alert(response.data.item);
+            console.log(response.data.item);
+            alert("로그아웃했습니다.");
             navigete("/");
         } catch (error) {
             console.error("An error occurred", error);
