@@ -108,7 +108,7 @@ const Board = (): ReactElement => {
                                 <StyledTd
                                     fontSize="1.3rem"
                                     fontWeight="bold"
-                                    width="700px"
+                                    width="750px"
                                 >
                                     제목
                                 </StyledTd>
@@ -125,13 +125,6 @@ const Board = (): ReactElement => {
                                     width="100px"
                                 >
                                     작성일
-                                </StyledTd>
-                                <StyledTd
-                                    fontSize="1.3rem"
-                                    fontWeight="bold"
-                                    width="50px"
-                                >
-                                    조회수
                                 </StyledTd>
                             </StyledTr>
                             {posts.map((post) => (
@@ -156,9 +149,6 @@ const Board = (): ReactElement => {
                                         {post && post.createdTime
                                             ? dateFormat(post.createdTime)
                                             : ""}
-                                    </StyledTd>
-                                    <StyledTd>
-                                        {post ? post.postViewCount : ""}
                                     </StyledTd>
                                 </StyledTr>
                             ))}

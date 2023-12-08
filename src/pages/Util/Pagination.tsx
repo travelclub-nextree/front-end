@@ -13,7 +13,7 @@ const Pagination = ({
 }: PaginationProps): ReactElement => {
     const { totalPages = 0, currentPage } = paginationInfo;
     const [pageNumberStart, setPageNumberStart] = useState(1);
-    const maxPageNumber = 5;
+    const maxPageNumber = 3;
 
     const calculatePageNumbers = (): number[] => {
         const end = Math.min(pageNumberStart + maxPageNumber - 1, totalPages);
