@@ -20,7 +20,7 @@ const Login = (): ReactElement => {
     const handleLogin = async (inputData: LoginDTO): Promise<void> => {
         try {
             const response = await axios.post(
-                `${SPRING_API_URL}/api/auth`,
+                `${SPRING_API_URL}/auth`,
                 inputData,
             );
             const { token, message } = response.data.item;

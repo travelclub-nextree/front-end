@@ -11,7 +11,7 @@ const Header = (): ReactElement => {
     const handleLogout = async (): Promise<void> => {
         try {
             const response = await axios.post(
-                `${SPRING_API_URL}/api/auth/logout`,
+                `${SPRING_API_URL}/auth/logout`,
                 {},
                 {
                     headers: {
